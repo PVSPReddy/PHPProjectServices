@@ -29,7 +29,7 @@ class UserServices extends ServerStatus
             $countries_data = $response_;
             $response = array("message"=>"Service is successful",
                              "code"=>"1",
-                              "movie_details"=>$countries_data
+                              "CountryDetails"=>$countries_data
                              );
             $conn = null;
             return $response;
@@ -40,7 +40,7 @@ class UserServices extends ServerStatus
             $countries_data = array();
                 $response = array("message"=>"Countries list are empty",
                              "code"=>"0",
-                            "movie_details"=>$countries_data
+                            "CountryDetails"=>$countries_data
                              );
                 return $response;
             //echo "Connection failed: " . $e->getMessage();
