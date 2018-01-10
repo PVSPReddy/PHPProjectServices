@@ -10,6 +10,9 @@ class RequestHandler// extends ServerStatus
         $uServices = new UserServices();
         switch($userRequest)
         {
+            case "GetCountriesDialCodesOnly":
+                return $response = $uServices -> GetCountryDialCodes();
+                break;
             case "GetCountriesData":
                 return $response = $uServices -> GetCountries();
                 break;
