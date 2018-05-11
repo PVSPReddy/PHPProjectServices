@@ -38,6 +38,7 @@ curl_setopt($curl, CURLOPT_HEADER, true);
 curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $curl_response = curl_exec($curl);
+echo "done";
 echo $curl_response;
 exit;
 if ($curl_response === false) 
