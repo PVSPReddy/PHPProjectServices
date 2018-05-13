@@ -41,6 +41,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $curl_response = curl_exec($curl);
 echo "done";
 echo $curl_response;
+print($curl_response);
 echo "done ended";
 exit;
 if ($curl_response === false) 
