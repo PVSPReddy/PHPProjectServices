@@ -30,6 +30,7 @@ $rawData = json_decode(file_get_contents('php://input'),true);
 */
 
 //$curl = curl_init($url);
+// $url = "https://script.google.com/macros/s/AKfycbx-jmj_70IEWRP3t5Z2QFSIkWakhYbTYvTMM2uTCCIE3ZXx0loS/exec&ndplr=1";
 $url = "https://script.google.com/macros/s/AKfycbx-jmj_70IEWRP3t5Z2QFSIkWakhYbTYvTMM2uTCCIE3ZXx0loS/exec";
 
 $curl = curl_init($url);
@@ -40,6 +41,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $curl_response = curl_exec($curl);
 echo "done";
 echo $curl_response;
+echo "done ended";
 exit;
 if ($curl_response === false) 
 {
